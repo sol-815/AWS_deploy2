@@ -21,6 +21,6 @@ public class HomeController {
             log.error("[" + activeProfile + "] /aws/v2 호출. error 로그 #################");
         else if(num == 0)
             log.warn("[" + activeProfile + "] /aws/v2 호출. warn 로그 #################");
-        return "<h1>AWS 배포 v2</h1>";
+        return "<h1>AWS 배포 v2.0</h1>";
     }
 }

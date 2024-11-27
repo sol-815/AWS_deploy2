@@ -9,15 +9,15 @@ import org.springframework.http.ResponseEntity;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-class HomeControllerTest {
+class cdHomeControllerTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
 
     @Test
     void hello(){
-        ResponseEntity<String> response = restTemplate.getForEntity("/aws/v1", String.class);
-        assertEquals("<h1>AWS 배포 v2</h1>", response.getBody());
+        ResponseEntity<String> response = restTemplate.getForEntity("/aws/v2", String.class);
+        assertEquals("<h1>AWS 배포 v2.0</h1>", response.getBody());
     }
 
 }
